@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>AdaTax @ ICLR 2027 — Call for Papers</title>
+<meta content="Call for papers for AdaTax — The Adaptation Tax: What Breaks When We Update Models? Full and short paper tracks, non-archival." name="description"/>
+<meta content="#0a0f1f" name="theme-color"/>
+<link href="images/logo.svg" rel="icon" type="image/svg+xml"/>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="topbar">
+<div class="container navwrap">
+<div class="bar">
+<a aria-label="AdaTax Home" class="brand" href="index.html">
+<span class="logoWrap">
+<img alt="AdaTax logo" class="logo" decoding="async" height="58" src="images/logo.svg" width="58"/>
+</span>
+<span class="brandText">
+<span class="brandTitle"><span class="brandAcr">AdaTax</span></span>
+<span class="brandMeta">ICLR 2027 Workshop</span>
+</span>
+</a>
+<button aria-label="Toggle menu" class="menuBtn">Menu ▾</button>
+<nav aria-label="Primary navigation" class="nav">
+<a href="index.html">Home</a>
+<a href="call-for-papers.html">Call for Papers</a>
+<a href="program.html">Program</a>
+<a href="speakers.html">Speakers</a>
+<a href="organizers.html">Organizers</a>
+</nav>
+</div>
+</div>
+</div>
+<main>
+<div class="container hero">
+<div class="heroCard">
+<div class="heroGrid">
+<div class="heroText">
+<div class="kicker">
+<span class="pill"><span class="dot"></span>Call for Papers</span>
+<span>AdaTax • ICLR 2027</span>
+</div>
+<h1>CALL FOR PAPERS</h1>
+<p class="sub">
+            We invite work that explains, measures, or reduces the reliability cost of updating a foundation model. Empirical analyses, re-analyses of published methods on new model families, and negative results are explicitly welcome.
+          </p>
+<div class="infoRow">
+<div class="chip">📝 <b>Deadline</b> 1 Feb 2027 (AoE)</div>
+<div class="chip">📣 <b>Notification</b> 26 Feb 2027</div>
+<div class="chip">📂 <b>Venue</b> OpenReview (link TBA)</div>
+</div>
+<div class="notice">The call opens on 1 December 2026 if the workshop is accepted. Details below are tentative until then.</div>
+</div>
+<div aria-hidden="true" class="heroArt">
+<img alt="" src="images/hero.svg"/>
+</div>
+</div>
+</div>
+</div>
+<section>
+<div class="container">
+<div class="sectionHead">
+<h2>Scope</h2>
+</div>
+<div class="card">
+<div class="cardPad">
+<p><b>Scope test.</b> A submission is in scope if it explains, measures, or reduces the reliability cost of updating a foundation model. A paper that proposes a new adaptation method and reports only its gains is out of scope; the same paper with a measured cost is welcomed.</p>
+<p>Updates include supervised fine-tuning, preference optimization, reinforcement learning, model merging, test-time adaptation, machine unlearning, and continual learning. Costs include losses in out-of-distribution generalization, calibration, robustness, safety, and retention of prior capabilities.</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="sectionHead">
+<h2>Topics of Interest</h2>
+<p>Including, but not limited to:</p>
+</div>
+<div class="card">
+<div class="cardPad">
+<ul class="clean">
+<li><b>Mechanism:</b> How supervised fine-tuning, preference optimization, reinforcement learning, model merging, test-time adaptation, machine unlearning, and continual learning change model parameters, representations, and behavior. This includes forgetting, feature distortion, calibration drift, and safety degradation; shared failure mechanisms across update methods; controlled comparisons of update methods at matched target-task improvement; and the effects of update data, including label shift, narrow-domain data, and model-generated data.</li>
+<li><b>Measurement:</b> Metrics and protocols for comparing reliability before and after an update, including OOD generalization, calibration and uncertainty estimation, selective prediction, OOD detection, safety compliance, and retention of prior capabilities. Also efficient indicators based on weights, activations, or behavior; label-free and sequential monitoring of test-time updates; update-aware benchmark design; cumulative costs of repeated or composed updates; and evaluation in healthcare, biomedicine, engineering, finance, and other high-stakes domains.</li>
+<li><b>Mitigation:</b> Methods that reduce adaptation costs while keeping the intended gains: constrained optimization, trust-region and KL-based objectives, feature preservation, model interpolation, parameter-efficient adaptation, and other methods that make the trade-off between gain and cost explicit. Also post-update repair, reliable model merging, stable and bounded test-time adaptation, abstention and rollback mechanisms, training choices that make later updates cheaper, and reporting standards for updated models.</li>
+<li><b>Negative results and position papers:</b> Mitigations that do not reduce the tax as expected; findings that do not hold across model families, tasks, or modalities; post-mortems of updates that degraded a deployed system; and arguments that the tax is overstated or an artifact of how we evaluate.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="sectionHead">
+<h2>Submission Tracks</h2>
+<p>Both tracks are non-archival.</p>
+</div>
+<div class="grid cols2">
+<div class="card qCard q1">
+<div class="cardPad">
+<div class="qLetter">Track 1</div>
+<h3>Full papers</h3>
+<p>Up to <b>8 pages</b>, excluding references and appendices. New methods, analyses, evaluations, or position arguments on the problems the workshop is built around.</p>
+</div>
+</div>
+<div class="card qCard q2">
+<div class="cardPad">
+<div class="qLetter">Track 2</div>
+<h3>Short papers</h3>
+<p>Up to <b>4 pages</b>, following ICLR's guidance for tiny and short papers and using the OpenReview venue template that ICLR provides. Priority goes to an implementation and evaluation of a simple unpublished idea, a modest self-contained theoretical result, a follow-up experiment or re-analysis of a published paper, or a fresh perspective on an existing publication.</p>
+<p>The short track is aimed at authors outside the usual ML conference circuit, including domain scientists, practitioners, and first-time ICLR authors.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="sectionHead">
+<h2>Policies</h2>
+</div>
+<div class="card">
+<div class="cardPad">
+<ul class="clean">
+<li><b>Non-archival.</b> Accepted papers are public on OpenReview and imported into iclr.cc. There are no proceedings, and authors keep the right to publish the work elsewhere.</li>
+<li><b>Concurrent submission</b> to another venue is allowed when that venue permits it.</li>
+<li><b>Previously published work.</b> Work already published at an archival ML venue, including the ICLR 2027 main track, is not accepted in the full-paper track. A follow-up experiment or re-analysis of published work is welcome in the short track and is labeled as such.</li>
+<li><b>Presentation.</b> At least one author of each accepted paper presents in person. Authors who cannot travel for visa, health, or similar reasons may present remotely.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="sectionHead">
+<h2>Review Process</h2>
+<p>Double-blind, on OpenReview.</p>
+</div>
+<div class="grid cols2">
+<div class="card">
+<div class="cardPad">
+<h3>How papers are reviewed</h3>
+<p>Each paper receives at least two reviews, and a third when the first two disagree; a non-conflicted organizer writes the decision. Reviewers answer four questions:</p>
+<ul class="clean">
+<li>Does the paper state what the update cost and how that cost was measured?</li>
+<li>Is the measurement sound, including baselines, variance across seeds, and checks for benchmark contamination?</li>
+<li>Is the result informative, judged the same way whether it is negative or positive?</li>
+<li>Is the paper clear?</li>
+</ul>
+</div>
+</div>
+<div class="card">
+<div class="cardPad">
+<h3>How contributed work is featured</h3>
+<p>Every accepted paper presents a poster. Six contributed talks are chosen from the accepted papers by review score, with three constraints: all three questions are covered, at least one talk comes from the short track, and at least one presents a negative result. At equal quality, first-time ICLR presenters are chosen first.</p>
+<h3 style="margin-top:14px;">Conflicts of interest</h3>
+<p>Organizers are not involved in assessing submissions from their own organization, current or former advisors or advisees, or co-authors of the past three years. Papers co-authored by an organizer may appear only as posters and are not eligible for awards or contributed talks.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="sectionHead">
+<h2>AI Policy</h2>
+</div>
+<div class="card">
+<div class="cardPad">
+<p>Authors follow the <a href="https://iclr.cc/Conferences/2027/AIPolicyForAuthors" rel="noopener" target="_blank" style="text-decoration:underline;">ICLR 2027 AI Policy for Authors</a> and reviewers the <a href="https://iclr.cc/Conferences/2027/AIPolicyForReviewers" rel="noopener" target="_blank" style="text-decoration:underline;">AI Policy for Reviewers</a>. AI assistance in writing, coding, or analysis is allowed and must be disclosed. AI-generated papers are not accepted in either track; short-track submissions must be primarily human-authored. AI does not act as a primary author, reviewer, or meta-reviewer of workshop papers.</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="sectionHead">
+<h2>Important Dates</h2>
+<p>All deadlines are Anywhere on Earth (AoE). Tentative.</p>
+</div>
+<div class="tableWrap datesTable">
+<table>
+<tbody>
+<tr><td>1 Dec 2026</td><td>Call for papers published; website live</td></tr>
+<tr><td>1 Feb 2027</td><td>Submission deadline, both tracks</td></tr>
+<tr><td>26 Feb 2027</td><td>Author notification; accepted papers public on OpenReview and imported into iclr.cc</td></tr>
+<tr><td>26 Mar 2027</td><td>Full schedule and livestream link posted</td></tr>
+<tr><td>TBA</td><td>Workshop day at ICLR 2027</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container footerGrid">
+<div>© 2027 AdaTax Workshop</div>
+<div style="text-align:right;">
+<span style="font-family:var(--mono);">Quick keys:</span>
+<kbd class="key">g</kbd>+<kbd class="key">h</kbd>/<kbd class="key">c</kbd>/<kbd class="key">p</kbd>/<kbd class="key">s</kbd>/<kbd class="key">o</kbd>
+</div>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

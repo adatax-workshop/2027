@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<title>AdaTax @ ICLR 2027 — Home</title>
+<meta content="AdaTax — The Adaptation Tax: What Breaks When We Update Models? A proposed ICLR 2027 workshop on the reliability costs of updating foundation models." name="description"/>
+<meta content="#0a0f1f" name="theme-color"/>
+<link href="images/logo.svg" rel="icon" type="image/svg+xml"/>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="topbar">
+<div class="container navwrap">
+<div class="bar">
+<a aria-label="AdaTax Home" class="brand" href="index.html">
+<span class="logoWrap">
+<img alt="AdaTax logo" class="logo" decoding="async" height="58" src="images/logo.svg" width="58"/>
+</span>
+<span class="brandText">
+<span class="brandTitle"><span class="brandAcr">AdaTax</span></span>
+<span class="brandMeta">ICLR 2027 Workshop</span>
+</span>
+</a>
+<button aria-label="Toggle menu" class="menuBtn">Menu ▾</button>
+<nav aria-label="Primary navigation" class="nav">
+<a href="index.html">Home</a>
+<a href="call-for-papers.html">Call for Papers</a>
+<a href="program.html">Program</a>
+<a href="speakers.html">Speakers</a>
+<a href="organizers.html">Organizers</a>
+</nav>
+</div>
+</div>
+</div>
+<main>
+<div class="container hero">
+<div class="heroCard">
+<div class="heroGrid">
+<div class="heroText">
+<div class="kicker">
+<span class="pill"><span class="dot"></span>ICLR 2027 Workshop Proposal</span>
+<span>AdaTax • The Adaptation Tax</span>
+</div>
+<h1>The Adaptation Tax: What Breaks When We Update Models?</h1>
+<p class="sub">
+            Foundation models are updated again and again after pretraining. Each update is judged by what it improves. AdaTax is about what it costs.
+          </p>
+<div class="infoRow">
+<div class="chip">🗓 <b>Date</b> TBA</div>
+<div class="chip">⏱ <b>Format</b> One day, in person + livestream</div>
+<div class="chip">📍 <b>Location</b> ICLR 2027</div>
+</div>
+<div class="actions">
+<a class="btn primary" href="call-for-papers.html">Call for Papers <small>tracks + dates</small></a>
+<a class="btn" href="program.html">Program <small>schedule</small></a>
+<a class="btn" href="speakers.html">Speakers <small>invited talks</small></a>
+</div>
+<div class="notice">This workshop proposal is under review at ICLR 2027. All dates and details are tentative until the decision on 29 November 2026.</div>
+</div>
+<div aria-hidden="true" class="heroArt">
+<img alt="" src="images/hero.svg"/>
+</div>
+</div>
+</div>
+</div>
+<section>
+<div class="container">
+<div class="sectionHead">
+<h2>Motivation</h2>
+</div>
+<div class="card">
+<div class="cardPad">
+<p>Foundation models are almost never used exactly as they come out of pretraining. In practice they are updated through supervised fine-tuning, reinforcement learning from human or verifier feedback, model merging, test-time adaptation, continual learning, machine unlearning, and many other procedures. These updates are usually evaluated by the improvements they bring to a target task, while much less attention is paid to what may be lost along the way.</p>
+<p>An update that improves one capability can also reduce out-of-distribution generalization, worsen calibration, lower robustness, or weaken safety behaviors learned earlier. These side effects are common in practice, yet they are rarely measured, reported, or studied together. They have been documented in several research communities, but mostly in isolation, with different assumptions, evaluation protocols, and metrics.</p>
+<p>We call this cost the <b>adaptation tax</b>: the loss in reliability, robustness, calibration, safety, or generalization that comes with an improvement on a target objective, by analogy with the alignment tax. AdaTax brings together researchers from post-training, alignment, model merging, safety, robustness, continual learning, and the application fields where updated models are deployed, to understand how models can be updated while keeping this cost low, and to make the cost visible when it is not.</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="sectionHead">
+<h2>Three Questions</h2>
+<p>The workshop is built around mechanism, measurement, and mitigation.</p>
+</div>
+<div class="grid cols3">
+<div class="card qCard q1">
+<div class="cardPad">
+<div class="qLetter">A</div>
+<h3>Mechanism</h3>
+<p class="qAsk">Which aspects of model behavior are affected by updates, and what gives rise to these effects?</p>
+<ul class="clean">
+<li>Is lost performance gone, harder to access, or overridden, and can it be recovered?</li>
+<li>How do narrow or seemingly benign updates spread across tasks, domains, modalities, and safety behaviors?</li>
+<li>Do fine-tuning, preference optimization, merging, unlearning, continual learning, and test-time adaptation fail for shared reasons?</li>
+</ul>
+</div>
+</div>
+<div class="card qCard q2">
+<div class="cardPad">
+<div class="qLetter">B</div>
+<h3>Measurement</h3>
+<p class="qAsk">How can we reliably and efficiently measure adaptation costs before and after deployment?</p>
+<ul class="clean">
+<li>Protocols that report the gains and the costs of an update together, without aggregates masking severe drops.</li>
+<li>Update-aware evaluations that predict which capabilities an update is most likely to affect.</li>
+<li>Detecting costs after deployment without labels, and reliable triggers for human review or rollback.</li>
+</ul>
+</div>
+</div>
+<div class="card qCard q3">
+<div class="cardPad">
+<div class="qLetter">C</div>
+<h3>Mitigation</h3>
+<p class="qAsk">How can models be updated while preserving reliability, robustness, safety, and generalization?</p>
+<ul class="clean">
+<li>Building reliability requirements into the update objective instead of checking them afterwards.</li>
+<li>Repairing degraded capabilities without undoing the intended gains or retraining from scratch.</li>
+<li>Audit, recovery, and rollback for models that are updated after deployment.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="sectionHead">
+<h2>Invited Speakers</h2>
+<p>Tentative; the final line-up is confirmed after acceptance.</p>
+</div>
+<div class="grid cols4">
+<div class="card"><div class="media"><img alt="Razvan Pascanu" src="images/people/razvan-pascanu.svg"/></div><div class="cardPad"><div class="personTitle"><div><h3><a class="nameLink" href="https://sites.google.com/view/razp/home" rel="noopener" target="_blank">Razvan Pascanu</a></h3><div class="aff">Google DeepMind • Mila</div></div></div></div></div>
+<div class="card"><div class="media"><img alt="Sharon Li" src="images/people/sharon-li.svg"/></div><div class="cardPad"><div class="personTitle"><div><h3><a class="nameLink" href="https://pages.cs.wisc.edu/~sharonli/" rel="noopener" target="_blank">Sharon Li</a></h3><div class="aff">University of Wisconsin–Madison</div></div></div></div></div>
+<div class="card"><div class="media"><img alt="Yue Zhao" src="images/people/yue-zhao.svg"/></div><div class="cardPad"><div class="personTitle"><div><h3><a class="nameLink" href="https://viterbi-web.usc.edu/~yzhao010/" rel="noopener" target="_blank">Yue Zhao</a></h3><div class="aff">University of Southern California</div></div></div></div></div>
+<div class="card"><div class="media"><img alt="Maria Brbić" src="images/people/maria-brbic.svg"/></div><div class="cardPad"><div class="personTitle"><div><h3><a class="nameLink" href="https://brbiclab.epfl.ch/team/" rel="noopener" target="_blank">Maria Brbić</a></h3><div class="aff">EPFL</div></div></div></div></div>
+<div class="card"><div class="media"><img alt="Bo Li" src="images/people/bo-li.svg"/></div><div class="cardPad"><div class="personTitle"><div><h3><a class="nameLink" href="https://aisecure.github.io/" rel="noopener" target="_blank">Bo Li</a></h3><div class="aff">University of Illinois Urbana–Champaign</div></div></div></div></div>
+<div class="card"><div class="media"><img alt="Eleni Triantafillou" src="images/people/eleni-triantafillou.svg"/></div><div class="cardPad"><div class="personTitle"><div><h3><a class="nameLink" href="https://elenitriantafillou.github.io/" rel="noopener" target="_blank">Eleni Triantafillou</a></h3><div class="aff">Google DeepMind</div></div></div></div></div>
+<div class="card"><div class="media"><img alt="Akshay Krishnamurthy" src="images/people/akshay-krishnamurthy.svg"/></div><div class="cardPad"><div class="personTitle"><div><h3><a class="nameLink" href="https://www.microsoft.com/en-us/research/people/akshaykr/" rel="noopener" target="_blank">Akshay Krishnamurthy</a></h3><div class="aff">Microsoft Research</div></div></div></div></div>
+<div class="card"><div class="media"><img alt="Aditi Raghunathan" src="images/people/aditi-raghunathan.jpg"/></div><div class="cardPad"><div class="personTitle"><div><h3><a class="nameLink" href="https://www.cs.cmu.edu/~aditirag/" rel="noopener" target="_blank">Aditi Raghunathan</a></h3><div class="aff">Carnegie Mellon University</div></div></div></div></div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="sectionHead">
+<h2>Organizers</h2>
+<p>Organizing committee.</p>
+</div>
+<div class="grid cols4">
+<div class="card"><div class="media"><img alt="Hao Dong" src="images/people/hao-dong.svg"/></div><div class="cardPad"><div class="personTitle"><div><h3><a class="nameLink" href="https://donghao51.github.io/" rel="noopener" target="_blank">Hao Dong</a></h3><div class="aff">ELLIS Institute Finland • Tampere University</div></div></div></div></div>
+<div class="card"><div class="media"><img alt="Muhammad Haris Khan" src="images/people/muhammad-haris-khan.jpg"/></div><div class="cardPad"><div class="personTitle"><div><h3><a class="nameLink" href="https://m-haris-khan.com/" rel="noopener" target="_blank">Muhammad Haris Khan</a></h3><div class="aff">MBZUAI</div></div></div></div></div>
+<div class="card"><div class="media"><img alt="Olga Fink" src="images/people/olga-fink.svg"/></div><div class="cardPad"><div class="personTitle"><div><h3><a class="nameLink" href="https://people.epfl.ch/olga.fink?lang=en" rel="noopener" target="_blank">Olga Fink</a></h3><div class="aff">EPFL</div></div></div></div></div>
+<div class="card"><div class="media"><img alt="Alexandros Iosifidis" src="images/people/alexandros-iosifidis.svg"/></div><div class="cardPad"><div class="personTitle"><div><h3><a class="nameLink" href="https://sites.google.com/view/iosifidis" rel="noopener" target="_blank">Alexandros Iosifidis</a></h3><div class="aff">Tampere University • ELLIS Institute Finland</div></div></div></div></div>
+<div class="card"><div class="media"><img alt="Rishabh Lalla" src="images/people/rishabh-lalla.jpg"/></div><div class="cardPad"><div class="personTitle"><div><h3><a class="nameLink" href="https://scholar.google.com/citations?user=XBQr2lwAAAAJ&amp;hl=en" rel="noopener" target="_blank">Rishabh Lalla</a></h3><div class="aff">MBZUAI</div></div></div></div></div>
+<div class="card"><div class="media"><img alt="Juho Kanniainen" src="images/people/juho-kanniainen.svg"/></div><div class="cardPad"><div class="personTitle"><div><h3><a class="nameLink" href="https://www.tuni.fi/fi/ihmiset/juho-kanniainen" rel="noopener" target="_blank">Juho Kanniainen</a></h3><div class="aff">Tampere University • ELLIS Institute Finland</div></div></div></div></div>
+<div class="card"><div class="media"><img alt="Vineeth N Balasubramanian" src="images/people/vineeth-balasubramanian.jpg"/></div><div class="cardPad"><div class="personTitle"><div><h3><a class="nameLink" href="https://people.iith.ac.in/vineethnb/" rel="noopener" target="_blank">Vineeth N Balasubramanian</a></h3><div class="aff">IIT Hyderabad • Microsoft Research</div></div></div></div></div>
+<div class="card"><div class="media"><img alt="Elisa Ricci" src="images/people/elisa-ricci.svg"/></div><div class="cardPad"><div class="personTitle"><div><h3><a class="nameLink" href="https://eliricci.eu/" rel="noopener" target="_blank">Elisa Ricci</a></h3><div class="aff">University of Trento • Fondazione Bruno Kessler</div></div></div></div></div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="sectionHead">
+<h2>Topics of Interest</h2>
+<p>A submission is in scope if it explains, measures, or reduces the reliability cost of updating a foundation model.</p>
+</div>
+<div class="card">
+<div class="cardPad">
+<ul class="clean">
+<li><b>Mechanism:</b> how fine-tuning, preference optimization, reinforcement learning, model merging, test-time adaptation, machine unlearning, and continual learning change parameters, representations, and behavior, including forgetting, feature distortion, calibration drift, and safety degradation.</li>
+<li><b>Measurement:</b> metrics and protocols for comparing reliability before and after an update, efficient indicators based on weights, activations, or behavior, label-free monitoring of test-time updates, and evaluation in high-stakes domains.</li>
+<li><b>Mitigation:</b> constrained and KL-based objectives, feature preservation, model interpolation, parameter-efficient adaptation, post-update repair, reliable merging, bounded test-time adaptation, and rollback mechanisms.</li>
+<li><b>Negative results and position papers:</b> mitigations that do not reduce the tax as expected, findings that do not transfer across model families or modalities, post-mortems of updates that degraded deployed systems, and arguments that the tax is overstated.</li>
+</ul>
+<p style="margin-top:12px;"><small>A paper that proposes a new adaptation method and reports only its gains is out of scope; the same paper with a measured cost is welcome. Full details are in the <a href="call-for-papers.html" style="text-decoration:underline;">Call for Papers</a>.</small></p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="sectionHead">
+<h2>Important Dates</h2>
+<p>All deadlines are Anywhere on Earth (AoE). Tentative.</p>
+</div>
+<div class="tableWrap datesTable">
+<table>
+<tbody>
+<tr><td>1 Dec 2026</td><td>Call for papers published</td></tr>
+<tr><td>1 Feb 2027</td><td>Submission deadline, both tracks</td></tr>
+<tr><td>26 Feb 2027</td><td>Author notification; accepted papers public on OpenReview</td></tr>
+<tr><td>TBA</td><td>Workshop day at ICLR 2027</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section>
+<div class="container">
+<div class="sectionHead">
+<h2>Contact</h2>
+<p>For questions.</p>
+</div>
+<div class="card"><div class="cardPad"><p><b>Email:</b> <a href="mailto:rishabh.lalla@mbzuai.ac.ae" style="text-decoration:underline;">rishabh.lalla@mbzuai.ac.ae</a></p></div></div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container footerGrid">
+<div>© 2027 AdaTax Workshop</div>
+<div style="text-align:right;">
+<span style="font-family:var(--mono);">Quick keys:</span>
+<kbd class="key">g</kbd>+<kbd class="key">h</kbd>/<kbd class="key">c</kbd>/<kbd class="key">p</kbd>/<kbd class="key">s</kbd>/<kbd class="key">o</kbd>
+</div>
+</div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
