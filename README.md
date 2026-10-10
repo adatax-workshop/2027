@@ -15,13 +15,11 @@ Plain static HTML/CSS/JS, no build step. Structure and styling follow the DG-EBF
 - `organizers.html` — organizer bios and program committee
 
 ## Photos
-Square photos (512×512) go in `images/people/<name-slug>.jpg`.
-People without a photo currently use an initials placeholder `images/people/<name-slug>.svg`.
-To swap one in, add the `.jpg` and change `.svg` to `.jpg` in `index.html`, `speakers.html` and/or `organizers.html`:
+Square photos (512×512 JPEG) live in `images/people/<name-slug>.jpg` and are referenced from
+`index.html`, `speakers.html` and `organizers.html`. To replace a photo, overwrite the file with the same name.
 
-```
-grep -rl "people/<name-slug>.svg" *.html | xargs sed -i '' 's#people/<name-slug>.svg#people/<name-slug>.jpg#g'
-```
+Sources: each person's homepage or institutional profile (linked from their name on the site);
+Razvan Pascanu's is from his Mila profile, Muhammad Haris Khan's from the MBZUAI faculty directory.
 
 ## After acceptance
 - Change "ICLR 2027 Workshop Proposal" in the hero pill and remove the `.notice` banners
